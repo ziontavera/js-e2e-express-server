@@ -10,10 +10,13 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
+- task: cyberchief-security-scanner@1
   inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+    scanType: 'web'
+    scope: 'reconnaissance'
+    apiEndpoint: 'https://cc.cyberchief.co/api/132/1162/automated-tests/'
+    failOnHighVulnerabilities: true
+    failOnHighAndMediumVulnerabilities: true
 
 - script: |
     npm install
