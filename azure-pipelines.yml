@@ -13,8 +13,10 @@ steps:
 - task: cyberchief-security-scanner@2
   inputs:
     scanType: 'api'
-    apiName: 'altoro'
+    apiName1: 'altoro'
     apiEndpoint: 'https://cc.cyberchief.co/api/120/1111/automated-tests/'
+    failOnHighVulnerabilities: true
+    failOnHighAndMediumVulnerabilities: true
 
 - script: |
     npm install
