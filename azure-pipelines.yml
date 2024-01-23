@@ -14,7 +14,7 @@ steps:
   inputs:
     scanType: 'web'
     scope: 'reconnaissance'
-    apiEndpoint: 'https://cc.cyberchief.co/api/132/1162/automated-tests/'
+    apiEndpoint: 'http://localhost:8000/api/137/1173/automated-tests/'
     failOnHighVulnerabilities: true
     failOnHighAndMediumVulnerabilities: true
 
