@@ -12,11 +12,12 @@ pool:
 steps:
 - task: cyberchief-security-scanner@2
   inputs:
-    scanType: 'api'
-    apiName: 'altoro'
-    apiEndpoint: 'https://cc.cyberchief.co/api/120/1111/automated-tests/'
+    scanType: 'raider'
+    raiderName: 'isira'
+    frameworks: 'aws_audit_manager_control_tower_guardrails_aws'
+    apiEndpoint: 'https://cc.cyberchief.co/api/101/835/automated-tests/'
     failOnHighVulnerabilities: true
-    failOnHighAndMediumVulnerabilities: false
+    failOnHighAndMediumVulnerabilities: true
 
 - script: |
     npm install
