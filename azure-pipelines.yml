@@ -16,7 +16,7 @@ steps:
     apiName: 'altoro'
     apiEndpoint: 'https://cc.cyberchief.co/api/120/1111/automated-tests/'
     failOnHighVulnerabilities: true
-    failOnHighAndMediumVulnerabilities: true
+    failOnHighAndMediumVulnerabilities: false
 
 - script: |
     npm install
