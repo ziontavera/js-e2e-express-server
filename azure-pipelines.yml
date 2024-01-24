@@ -13,9 +13,8 @@ steps:
 - task: cyberchief-security-scanner@2
   inputs:
     scanType: 'raider'
-    raiderName: 'isira'
-    frameworks: 'aws_audit_manager_control_tower_guardrails_aws'
-    apiEndpoint: 'https://cc.cyberchief.co/api/101/835/automated-tests/'
+    raiderName: 'Ruchi'
+    apiEndpoint: 'https://cc.cyberchief.co/api/111/1045/automated-tests/'
     failOnHighVulnerabilities: true
     failOnHighAndMediumVulnerabilities: true
 
