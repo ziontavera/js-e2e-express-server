@@ -14,9 +14,8 @@ steps:
   inputs:
     scanType: 'raider'
     raiderName: 'Ruchi'
-    regions: 'all'
+    regions: 'All'
     apiEndpoint: 'https://cc.cyberchief.co/api/132/1204/automated-tests/'
-    failOnHighVulnerabilities: true
     failOnHighAndMediumVulnerabilities: true
 
 - script: |
