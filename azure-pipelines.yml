@@ -15,7 +15,7 @@ steps:
     scanType: 'raider'
     raiderName: 'Ruchi'
     regions: 'All'
-    apiEndpoint: 'https://cc.cyberchief.co/api/132/1204/automated-tests/'
+    frameworks: 'aws_audit_manager_control_tower_guardrails_aws'
     failOnHighAndMediumVulnerabilities: true
 
 - script: |
