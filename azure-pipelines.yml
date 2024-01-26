@@ -14,9 +14,21 @@ steps:
   inputs:
     scanType: 'raider'
     raiderName: 'Ruchi'
-    regions: 'us-east-1'
-    services: 'ec2'
+    regions: 'All'
     apiEndpoint: 'https://cc.cyberchief.co/api/132/1204/automated-tests/'
+
+- task: cyberchief-security-scanner@2
+  inputs:
+    scanType: 'web'
+    apiEndpoint: 'https://cc.cyberchief.co/api/132/1162/automated-tests/'
+    failOnHighVulnerabilities: true
+    failOnHighAndMediumVulnerabilities: true
+
+- task: cyberchief-security-scanner@2
+  inputs:
+    scanType: 'api'
+    apiName: 'altoro'
+    apiEndpoint: 'https://cc.cyberchief.co/api/120/1111/automated-tests/'
     failOnHighVulnerabilities: true
     failOnHighAndMediumVulnerabilities: true
 
