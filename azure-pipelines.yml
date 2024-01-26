@@ -16,6 +16,7 @@ steps:
     raiderName: 'Ruchi'
     regions: 'us-east-1'
     frameworks: 'aws_audit_manager_control_tower_guardrails_aws'
+    services: 'ec2'
     apiEndpoint: 'https://cc.cyberchief.co/api/132/1204/automated-tests/'
     failOnHighVulnerabilities: true
     failOnHighAndMediumVulnerabilities: true
