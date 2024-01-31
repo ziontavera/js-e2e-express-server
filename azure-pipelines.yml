@@ -10,26 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: cyberchief-security-scanner@2
-  inputs:
-    scanType: 'raider'
-    raiderName: 'Ruchi'
-    regions: 'All'
-    apiEndpoint: 'https://cc.cyberchief.co/api/132/1204/automated-tests/'
-
-- task: cyberchief-security-scanner@2
-  inputs:
-    scanType: 'api'
-    apiName: 'altoro'
-    apiEndpoint: 'https://cc.cyberchief.co/api/120/1111/automated-tests/'
-    failOnHighVulnerabilities: false
-    failOnHighAndMediumVulnerabilities: false
 
 - task: cyberchief-security-scanner@2
   inputs:
     scanType: 'web'
     apiEndpoint: 'https://cc.cyberchief.co/api/132/1162/automated-tests/'
-    failOnHighVulnerabilities: false
+    failOnHighVulnerabilities: true
     failOnHighAndMediumVulnerabilities: false
 
 
