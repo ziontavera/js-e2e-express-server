@@ -14,7 +14,7 @@ steps:
 - task: cyberchief-security-scanner@2
   inputs:
     scanType: 'web'
-    apiEndpoint: 'https://cc.cyberchief.co/api/132/1162/automated-tests/'
+    apiEndpoint: 'https://cc.cyberchief.co/api/111/1042/automated-tests/'
     failOnHighVulnerabilities: true
     failOnHighAndMediumVulnerabilities: false
 
