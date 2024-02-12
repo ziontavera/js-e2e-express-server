@@ -13,6 +13,10 @@ steps:
 - task: cyberchief-security-scanner@2
   inputs:
     scanType: 'web'
+    apiEndpoint: 'https://cc.cyberchief.co/api/35/165/automated-tests/'
+- task: cyberchief-security-scanner@2
+  inputs:
+    scanType: 'web'
     apiEndpoint: 'https://cc.cyberchief.co/api/132/1162/automated-tests/'
 
 
