@@ -14,6 +14,7 @@ steps:
   inputs:
     scanType: 'web'
     apiEndpoint: 'https://cc.cyberchief.co/api/111/1042/automated-tests/'
+    failOnHighVulnerabilities: true
 
 
 
